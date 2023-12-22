@@ -1,0 +1,26 @@
+<div class="header-wrapper">
+  <div class="header-bar">
+    <div class="logo-container">
+      <img class="logo-img" src="../../assets/images/logo-img.png" alt="logo" />
+    </div>
+
+    <div class="hamburger-menu">
+      <span (click)="openMenu()">&#x2630;</span>
+      <ng-container *ngIf="isHamMenuOpen">
+        <div class="opened-navbar">
+          <div class="navbar-content">
+            <ul>
+              <li>Sign in</li>
+              <li>Log in</li>
+            </ul>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+
+    <div class="navbar-container">
+      <button class="header-button">sign in</button>
+      <button class="header-button">log in</button>
+    </div>
+  </div>
+</div>
